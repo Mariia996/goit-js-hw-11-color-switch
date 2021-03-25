@@ -1,0 +1,16 @@
+.btn {
+  background-color: tomato;
+  font-family: "New Tegomin", serif;
+  font-size: 24px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  border-color: black;
+  outline: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: teal;
+}
