@@ -22,16 +22,14 @@ function onBtnRandomColor() {
         const randomNumber = randomIntegerFromInterval(0, colors.length);
         document.body.style.backgroundColor = colors[randomNumber];
     }, 1000);
-    startBtn.disabled = true;
+  startBtn.disabled = true;
+  startBtn.style.backgroundColor = 'grey';
 
-    stopBtn.addEventListener('click', function () {
-        clearInterval(intervalColorsId);
-        startBtn.disabled = false;
+
+  stopBtn.addEventListener('click', function () {
+    clearInterval(intervalColorsId);
+    startBtn.disabled = false;
+    startBtn.style.backgroundColor = '';
+
     });
 }
-
-
-
-
-
-

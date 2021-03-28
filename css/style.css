@@ -1,16 +1,35 @@
+body {
+  box-sizing: border-box;
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
 .btn {
   background-color: tomato;
-  font-family: "New Tegomin", serif;
+  font-family: 'New Tegomin', serif;
   font-size: 24px;
-  width: 100px;
-  text-align: center;
   border-radius: 10px;
   border-color: black;
   outline: none;
+
+  width: 100px;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 6px;
+  box-sizing: border-box;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:last-child {
+  margin-right: 0;
 }
 
 .btn:hover,
-.btn:focus,
-.btn:active {
+.btn:focus {
   background-color: teal;
+  border-color: tomato;
 }
