@@ -18,9 +18,12 @@ startBtn.addEventListener('click', onBtnRandomColor);
 
 function onBtnRandomColor() {
 
-    const intervalColorsId = setInterval(() => {
-        const randomNumber = randomIntegerFromInterval(0, colors.length);
-        document.body.style.backgroundColor = colors[randomNumber];
+  const intervalColorsId = setInterval(() => {
+
+    const lastColor = colors.length - 1;
+    const randomNumber = randomIntegerFromInterval(0, lastColor);
+    document.body.style.backgroundColor = colors[randomNumber];
+
     }, 1000);
   startBtn.disabled = true;
   startBtn.style.backgroundColor = 'grey';
